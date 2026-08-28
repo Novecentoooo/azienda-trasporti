@@ -15,7 +15,7 @@ body {
 }
 
 header {
-    background-color: #1f3c88;
+    background-color: #c8102e;
     color: white;
     text-align: center;
     padding: 60px 20px;
@@ -31,7 +31,7 @@ header p {
 }
 
 nav {
-    background-color: #162d66;
+    background-color: #8f0b22;
     display: flex;
     justify-content: center;
     gap: 40px;
@@ -50,34 +50,74 @@ nav a:hover {
 }
 
 .hero {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 100px 20px;
+    padding: 80px 20px;
     background-color: #f2f5fa;
 }
 
+.hero-content {
+    max-width: 900px;
+}
+
+.hero-label {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+    color: #c8102e;
+}
+
 .hero h2 {
-    font-size: 40px;
-    margin-bottom: 20px;
+    font-size: 56px;
+    line-height: 1.15;
+    margin-bottom: 25px;
 }
 
 .hero p {
+    max-width: 700px;
+    margin: 0 auto 35px;
     font-size: 20px;
-    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
 }
 
 .button {
     display: inline-block;
-    background-color: #1f3c88;
+    background-color: #c8102e;
     color: white;
     text-decoration: none;
     padding: 15px 30px;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: bold;
 }
 
 .button:hover {
-    background-color: #162d66;
+    background-color: #8f0b22;
+}
+
+.secondary-button {
+    background-color: transparent;
+    color: #c8102e8;
+    border: 2px solid #c8102e;
+}
+
+.secondary-button:hover {
+    background-color: #c8102e;
+    color: white;
+}
+    background-color: #8f0b22;
 }
 
 .services {
@@ -147,7 +187,7 @@ nav a:hover {
     margin-bottom: 30px;
 }
 footer {
-    background-color: #162d66;
+    background-color: #8f0b22;
     color: white;
     text-align: center;
     padding: 25px 20px;
@@ -177,6 +217,49 @@ footer p {
     nav {
         flex-direction: column;
         gap: 15px;
+    }
+     .highlights {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .highlight {
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    }
+
+    .highlight:nth-child(odd) {
+        border-right: 1px solid rgba(255, 255, 255, 0.25);
+    }
+
+    .highlight:nth-last-child(-n+2) {
+        border-bottom: none;
+    }   
+
+        .hero {
+        min-height: 520px;
+        padding: 60px 20px;
+    }
+
+    .hero h2 {
+        font-size: 38px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-buttons .button {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .services h2 {
+        font-size: 32px;
     }
 }
 .contact-info {
@@ -223,5 +306,66 @@ footer p {
 .quote-form input:focus,
 .quote-form textarea:focus {
     outline: none;
-    border-color: #1f3c88;
+    border-color: #c8102e;
+}
+.section-label {
+    display: block;
+    color: #c8102e;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.services h2 {
+    max-width: 700px;
+    margin: 0 auto 50px;
+    font-size: 40px;
+    line-height: 1.2;
+}
+
+.service {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.service h3 {
+    color: #c8102e;
+}
+.highlights {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    background-color: #c8102e;
+    color: white;
+}
+
+.highlight {
+    text-align: center;
+    padding: 45px 25px;
+    border-right: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.highlight:last-child {
+    border-right: none;
+}
+
+.highlight strong {
+    display: block;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.highlight h3 {
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+.highlight p {
+    font-size: 15px;
+    line-height: 1.5;
 }
