@@ -12,10 +12,21 @@
 
 </head>
 
+     <script>
+    const menuToggle = document.querySelector(".menu-toggle");
+    const mainNav = document.querySelector(".main-nav");
+
+    menuToggle.addEventListener("click", () => {
+        mainNav.classList.toggle("active");
+    });
+     </script>
+
 <body>
 
   <header>
-   <div class="logo">KSN TRASPORTI</div>
+   <a href="#home" class="logo">
+    <img src= "logo.png" alt="KSN TRASPORTI">
+</a>
 
 <h1>Trasportiamo ciò che conta.</h1>
 
@@ -29,7 +40,11 @@
 
 </header>
 
-<nav>
+<button class="menu-toggle" aria-label="Apri menu">
+    ☰
+</button>
+
+<nav class="main-nav">
     <a href="#home">Home</a>
     <a href="#services">Servizi</a>
     <a href="#about">Chi siamo</a>
@@ -54,7 +69,9 @@
             <a href="#contact" class="button">Richiedi un preventivo</a>
             <a href="#services" class="button secondary-button">Scopri i nostri servizi</a>
         </div>
-
+              <div class="hero-location">
+    📍 Borso del Grappa · Italia · Tutta Europa
+</div>
     </div>
 
 </section>
@@ -167,6 +184,55 @@
 
     </div>
 
+    <div class="about-image">
+        <img src="camion1.png" alt="KSN TRASPORTI - Trasporto merci">
+    </div>
+
+</section>
+<section class="why-us">
+
+    <div class="why-image">
+        <img src="magazzino.png" alt="Logistica e trasporto merci KSN TRASPORTI">
+    </div>
+
+    <div class="why-content">
+
+        <span class="section-label">PERCHÉ KSN TRASPORTI</span>
+
+        <h2>Un servizio pensato per le tue esigenze.</h2>
+
+        <p>
+            Ogni trasporto richiede attenzione, organizzazione e
+            comunicazione. Per questo valutiamo ogni richiesta
+            individualmente.
+        </p>
+
+        <div class="why-item">
+            <h3>Affidabilità</h3>
+            <p>
+                Seguiamo ogni richiesta con attenzione, dalla partenza
+                alla destinazione.
+            </p>
+        </div>
+
+        <div class="why-item">
+            <h3>Flessibilità</h3>
+            <p>
+                Valutiamo diverse esigenze di trasporto e cerchiamo
+                la soluzione più adatta.
+            </p>
+        </div>
+
+        <div class="why-item">
+            <h3>Copertura europea</h3>
+            <p>
+                Operiamo con destinazioni in Italia e in tutta Europa.
+            </p>
+        </div>
+
+    </div>
+
+</section>
 </section>
 
 
@@ -304,8 +370,60 @@
 </section>
 </section>
 
-<footer>
-    <p>&copy; 2026 Transport Company. All rights reserved.</p>
+<footer class="footer">
+
+    <div class="footer-content">
+
+        <div class="footer-company">
+
+            <h2>KSN TRASPORTI</h2>
+
+            <p>
+                Trasporti e soluzioni logistiche
+                da Borso del Grappa in tutta Europa.
+            </p>
+
+        </div>
+
+        <div class="footer-contact">
+
+            <h3>Contatti</h3>
+
+            <p>
+                📍 Borso del Grappa, Italia
+            </p>
+
+            <p>
+                📞 <a href="tel:+390000000000">
+                    +39 XXX XXX XXXX
+                </a>
+            </p>
+
+            <p>
+                ✉️ <a href="mailto:info.ksntrasporti@gmail.com">
+                    info.ksntrasporti@gmail.com
+                </a>
+            </p>
+
+        </div>
+
+        <div class="footer-links">
+
+            <h3>Link rapidi</h3>
+
+            <a href="#home">Home</a>
+            <a href="#services">Servizi</a>
+            <a href="#about">Chi siamo</a>
+            <a href="#contact">Richiedi un preventivo</a>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 KSN TRASPORTI. Tutti i diritti riservati.</p>
+    </div>
+
 </footer>
 
 
