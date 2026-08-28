@@ -169,28 +169,138 @@
 
 </section>
 
-<section class="contact" id="contact">
-    <h2>Request a Quote</h2>
 
-    <p>Tell us about your transport needs and we'll get back to you.</p>
+    <section class="contact" id="contact">
 
-    <form class="quote-form" action="https://formspree.io/f/xvkoodlr" method="POST">
+    <div class="contact-header">
+        <span class="section-label">RICHIEDI UN PREVENTIVO</span>
 
-        <label for="name">Your Name</label>
-        <input type="text" id="name" name="name" placeholder="Your full name" required>
+        <h2>Hai bisogno di un trasporto?</h2>
 
-        <label for="email">Email Address</label>
-        <input type="email" id="email" name="email" placeholder="Your email address" required>
+        <p>
+            Compila il modulo e raccontaci di cosa hai bisogno.
+            Ti ricontatteremo per valutare la soluzione più adatta.
+        </p>
+    </div>
 
-        <label for="phone">Phone Number</label>
-        <input type="tel" id="phone" name="phone" placeholder="Your phone number">
+    <form class="quote-form"
+          action="https://formspree.io/f/xvkoodlr"
+          method="POST">
+            <input type="hidden" name="_subject" value="Nuova richiesta di preventivo - KSN TRASPORTI">
 
-        <label for="message">Transport Details</label>
-        <textarea id="message" name="message" rows="5" placeholder="Tell us what you need transported..." required></textarea>
+        <div class="form-row">
 
-        <button type="submit" class="button">Send Quote Request</button>
+            <div class="form-group">
+                <label for="name">Nome e cognome *</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Il tuo nome e cognome"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="La tua email"
+                    required>
+            </div>
+
+        </div>
+
+        <div class="form-row">
+
+            <div class="form-group">
+                <label for="phone">Telefono</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="+39 ...">
+            </div>
+
+            <div class="form-group">
+                <label for="date">Data desiderata</label>
+                <input
+                    type="date"
+                    id="date"
+                    name="date">
+            </div>
+
+        </div>
+
+        <div class="form-row">
+
+            <div class="form-group">
+                <label for="pickup">Luogo di ritiro *</label>
+                <input
+                    type="text"
+                    id="pickup"
+                    name="pickup"
+                    placeholder="Città, provincia o Paese"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label for="delivery">Luogo di consegna *</label>
+                <input
+                    type="text"
+                    id="delivery"
+                    name="delivery"
+                    placeholder="Città, provincia o Paese"
+                    required>
+            </div>
+
+        </div>
+
+        <div class="form-row">
+
+            <div class="form-group">
+                <label for="goods">Tipo di merce *</label>
+
+                <select id="goods" name="goods" required>
+                    <option value="">Seleziona...</option>
+                    <option value="Merce generale">Merce generale</option>
+                    <option value="Pallet">Pallet</option>
+                    <option value="Macchinari">Macchinari</option>
+                    <option value="Materiali">Materiali</option>
+                    <option value="Altro">Altro</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="weight">Peso / dimensioni</label>
+
+                <input
+                    type="text"
+                    id="weight"
+                    name="weight"
+                    placeholder="Es. 500 kg / 2 pallet">
+            </div>
+
+        </div>
+
+        <div class="form-group">
+            <label for="message">Dettagli del trasporto *</label>
+
+            <textarea
+                id="message"
+                name="message"
+                rows="6"
+                placeholder="Descrivi la merce e qualsiasi informazione utile..."
+                required></textarea>
+        </div>
+
+        <button type="submit" class="button">
+            Invia richiesta di preventivo
+        </button>
 
     </form>
+
 </section>
 </section>
 
